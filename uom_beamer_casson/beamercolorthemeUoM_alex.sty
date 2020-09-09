@@ -2,6 +2,7 @@
 % Based upon the official PowerPoint styling.
 % -------------------------------------------
 % Authors: <andrew.mundy@cs.man.ac.uk>
+% Edited by alex.casson@manchester.ac.uk
 
 \mode<presentation>
 
@@ -28,10 +29,20 @@
 \colorlet{uomgrey75}{uomgrey!75!white}
 \colorlet{uomgrey50}{uomgrey!50!white}
 \colorlet{uomgrey25}{uomgrey!25!white}
+\colorlet{uomgrey20}{uomgrey!20!white}
+\colorlet{uomgrey13}{uomgrey!13!white}
 \colorlet{uomgrey10}{uomgrey!10!white}
 \colorlet{uomgrey5}{uomgrey!5!white}
 
 \colorlet{contentgray}{black!75!white}
+
+
+% Colours for accessibility
+\definecolor{uomredalert}{HTML}{D91E18} %from http://colorsafe.co/. 
+\definecolor{uomlinkblue}{HTML}{0071BC} % from http://web-accessibility.carnegiemuseums.org/design/color/
+\definecolor{whiteonpuruple}{HTML}{FEFEFE} % from http://colorsafe.co/. uompurple50 is B380CC.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,12 +64,18 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Block Colouring
-\setbeamercolor{block title}{use=structure, fg=white, bg=uompurple50}
+\setbeamercolor{block title}{use=structure, fg=whiteonpuruple, bg=uompurple75}
 \setbeamercolor{block title alerted}{use=alerted text, fg=white, bg=uompurple}
 \setbeamercolor{block title example}{use=example text, fg=white, bg=uompurple}
 
-\setbeamercolor{block body}{fg=uompurple, use=block title, bg=uomgrey25}
+\setbeamercolor{block body}{fg=uompurple, use=block title, bg=uomgrey13}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\setbeamercolor{alerted text}{fg=uomredalert}
 
 \mode
 <all>
