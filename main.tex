@@ -34,13 +34,23 @@
 \usepackage{amsmath}   % assumes amsmath package installed
   \allowdisplaybreaks[1] % allow eqnarrays to break across pages
 \usepackage{amssymb}   % assumes amsmath package installed 
-\usepackage{hyperref}  % add hyperlinks to document
+\usepackage{hyperref} % add hyperlinks to document. Settings are for accessiblity
   \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
+    linkcolor=uomlinkblue,
+    filecolor=uomlinkblue,      
+    urlcolor=uomlinkblue,
+	pdflang={en-GB},
 }
+\usepackage[document]{ragged2e} % left aligned text for accessibility
+% experimental - does fundamentally work, if with quite a bit of effort
+%\usepackage{axessibility} % LaTeX readable equations for accessibility
+%  \tagpdfsetup{tabsorder=structure,uncompress,activate-all,interwordspace=true}
+%  \pdfextension catalog{/Lang (en-GB)}
+%  \RequirePackage{luacode}
+%  \directlua{require("axessibility.lua")}
+\usepackage{unicode-math} % unicode maths for accessibility
+\usepackage{pdfcomment} % for alt text for accessibility
 \usepackage{rotating}  % allow portrait figures and tables
 \usepackage{subfigure} % allow matrices of figures
 \usepackage{float}     % allows H option on floats to force here placement
@@ -105,6 +115,9 @@ Text for notes goes here.
 \mode
 <presentation>{ \frame{\frametitle{Example slide} \label{slide:z}
   \begin{columns}
+  
+  % Include figure with
+  %\begin{center} \pdftooltip{\includegraphics[width=0.65\textwidth]{introduction_to_matlab}}{The Matlab command window} \end{center}
   
     \column{0.56\textwidth}
       \begin{itemize}
