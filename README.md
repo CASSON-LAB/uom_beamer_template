@@ -10,3 +10,5 @@ Notes:
 \documentclass[11pt,a4paper]{article} 
 \usepackage{beamerarticle}
 \setjobnamebeamerversion{main.beamer}
+
+The current version has had the colours tweaked in order to meet AA accessiblity guidelines. The fixes for this are a little 'hackey' and would benefit from some tidying up. 
